@@ -18,6 +18,13 @@ This project is a native Android app (Kotlin + Jetpack Compose) for the traditio
 - Samsung Galaxy M32 5G can run this app.
 
 ## Build
-Open the folder in Android Studio and run the `app` configuration.
+- Android Studio: open the folder and run the `app` configuration.
+- CLI (Linux/macOS):
+  ```bash
+  ./scripts/build-debug-apk.sh
+  ```
 
-> Note: Building in restricted CI/container environments may fail if Google Maven is blocked.
+If successful, the APK will be generated at:
+`app/build/outputs/apk/debug/app-debug.apk`
+
+> Note: Building in restricted CI/container environments may fail if Google Maven / Maven Central are blocked.
